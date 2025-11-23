@@ -1,0 +1,147 @@
+
+body {
+    background: linear-gradient(135deg, #fff5e1, #ffe2f7);
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background: linear-gradient(90deg, #ffb6c1, #ffc48c);
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #5a3d2b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    opacity: 0.75;
+}
+
+
+.gradient-hero {
+    background: linear-gradient(135deg, #ffd9e8, #fffdd0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    flex-wrap: wrap;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+#section1 span {
+    color: #b05d72;
+}
+
+.right-image {
+    width: 260px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.gradient-box {
+    padding: 25px;
+    margin: 20px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #ffe6cc, #ffd6e7);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+.no-proj {
+    background: #fff;
+    padding: 18px;
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid #c5a6b1;
+}
+
+.no-proj p {
+    font-weight: bold;
+    color: #5a3d2b;
+    font-size: 17px;
+}
+
+
+form input, form textarea {
+    width: 260px;
+    padding: 10px;
+    border: 1px solid #bfa6a6;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #fff9f4;
+}
+
+button {
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #ff8da1, #ffb47f);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    #section1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-image {
+        width: 200px;
+        margin-top: 15px;
+    }
+
+    form input, form textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    #section1 h1 {
+        font-size: 22px;
+    }
+
+    .right-image {
+        width: 160px;
+    }
+}
+
+
